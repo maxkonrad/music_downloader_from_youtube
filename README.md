@@ -1,6 +1,6 @@
 # YouTube Bulk MP3 Downloader
 ## Usage
-Download the video_links.txt file and you2mp3.exe file first. Then, just copy the YouTube links of the musics you want to download and paste them into video_links.py file line by line. Then you can run the executable .exe file.
+Download the video_links.txt file and you2mp3.exe file from releases section first. Then, just copy the YouTube links of the musics you want to download and paste them into video_links.py file line by line. Then you can run the executable .exe file.
 ## Requirments for Development
 To run this program, you need Python 3 installed on your device and besides that you might need to run
 ```

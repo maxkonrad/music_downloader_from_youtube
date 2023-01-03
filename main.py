@@ -15,14 +15,15 @@ print("Reading Text File")
 with open(file_dir) as fp:
     while True:
         count += 1
-        time.sleep(3)
+        time.sleep(6)
         line = fp.readline()
         if not line:
             break
-        line = YouTube(fp.readline())
+        line = YouTube(line)
         print("Downloading MP3 at line {}: {}".format(count, line.title))
         try:
             video = line.streams.filter(only_audio=True).first()
+            print(video)
             out_file = video.download(output_path = out_folder)
             base, ext = os.path.splitext(out_file)
             new_file = base + '.mp3'
